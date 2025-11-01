@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+The page features a responsive layout, dynamic product fetching from a mock API, and interactive filtering, searching, and sorting capabilities. It demonstrates core front-end development skills using React.js, pure CSS for styling, and emphasizes clean, efficient, and semantic code.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live Demo
+Experience the live application here:
+[Live PLP on Netlify]([Your Netlify URL Here])
 
-## Available Scripts
+Features
+Responsive Design: Adapts seamlessly to desktop, tablet, and mobile screen sizes.
+Dynamic Product Fetching: Integrates with the Fake Store API to fetch product data.
 
-In the project directory, you can run:
+Product Filters:
+Filter by Category.
+Filter by Price Range (min/max input and slider).
+Placeholder for "In Stock" (as Fake Store API does not provide stock data).
+Search Functionality: Real-time search by product title.
+Sorting Options: Sort products by:
+Default order (API order)
+Price (Low to High)
+Price (High to Low)
+Name (A-Z)
+Modular React Components: Project structured into reusable components (Header, Filters, ProductCard, ProductGrid, Footer).
+SEO Optimization:
+Semantic HTML5 tags.
+Dynamic page title, meta description, and keywords using react-helmet-async.
+Structured data (JSON-LD) for ItemList schema using react-helmet-async to improve search engine understanding.
+Pure CSS Styling: Minimal external dependencies, leveraging native CSS for layout (Flexbox, Grid) and responsiveness (Media Queries).
+Modern JavaScript: Utilizes React Hooks (useState, useEffect, useMemo) for state management and performance optimization.
 
-### `npm start`
+Technologies Used
+React.js: Front-end JavaScript library.
+HTML5: Semantic page structure.
+CSS3: Styling and responsiveness (Flexbox, Grid, Media Queries).
+JavaScript (ES6+): Core logic.
+Axios: Promise-based HTTP client for API requests.
+React Helmet Async: For managing document head tags and SEO metadata in React.
+Git & GitHub: Version control.
+Netlify: Deployment.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Setup Instructions
+Follow these steps to get the project up and running on your local machine.
+Prerequisites
+Before you begin, ensure you have the following installed:
+Node.js (v14 or higher) & npm (v6 or higher): Download & Install Node.js (npm is included).
+Git: Download & Install Git.
+Code Editor: Visual Studio Code
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Installation
+Clone the Repository:
 
-### `npm test`
+git clone https://github.com/srikanthgopu11/Appscrip-task-Srikanth-Gopu.git
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Navigate to the Project Directory:
 
-### `npm run build`
+cd Appscrip-task-Srikanth-Gopu
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Install Dependencies:
+Install all the required Node.js packages. Due to potential peer dependency conflicts with newer npm versions, it's recommended to use the --legacy-peer-deps flag for a smoother installation.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+npm install --legacy-peer-deps
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Running the Application Locally
+Start the Development Server:
 
-### `npm run eject`
+npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Project Structure
+The project follows a standard Create React App structure, with an emphasis on component modularity:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Appscrip-task-Srikanth-Gopu/
+├── public/
+│   ├── index.html        
+│   └── favicon.ico       
+├── src/
+│   ├── components/       
+│   │   ├── Header.js
+│   │   ├── Filters.js
+│   │   ├── ProductCard.js
+│   │   ├── ProductGrid.js
+│   │   └── Footer.js
+│   ├── App.js            
+│   ├── App.css           
+│   ├── index.js          
+│   └── index.css         
+├── .gitignore            
+├── package.json          
+├── README.md             
+└── ...
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Deployment
+The application is deployed using Netlify for continuous deployment.
+Build the project for production:
 
-## Learn More
+npm run build
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Deploy to Netlify:
+Connect your GitHub repository to Netlify, configuring the build command as npm run build and the publish directory as build.
+Alternatively, you can manually drag and drop the contents of the build folder to the Netlify deploy interface.
