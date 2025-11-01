@@ -2,7 +2,7 @@ The page features a responsive layout, dynamic product fetching from a mock API,
 
 Live Demo
 Experience the live application here:
-[Live PLP on Netlify]([Your Netlify URL Here])
+[Product Listing Page]([appscrip-task-srikanth-gopu.netlify.app])
 
 Features
 Responsive Design: Adapts seamlessly to desktop, tablet, and mobile screen sizes.
