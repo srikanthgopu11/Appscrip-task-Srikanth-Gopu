@@ -2,7 +2,7 @@ The page features a responsive layout, dynamic product fetching from a mock API,
 
 Live Demo
 Experience the live application here:
-[Product Listing Page](appscrip-task-srikanth-gopu.netlify.app)
+[Product Listing Page](http://appscrip-task-srikanth-gopu.netlify.app/)
 
 Features
 Responsive Design: Adapts seamlessly to desktop, tablet, and mobile screen sizes.
